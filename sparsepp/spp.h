@@ -1487,6 +1487,7 @@ private:
         for (size_type i = offset; i < num_items - 1; ++i)
             memcpy(_group + i, _group + i + 1, sizeof(*_group));
 
+        if (0)
         if (_sizing(num_items - 1) != num_alloc)
         {
             num_alloc = _sizing(num_items - 1);
